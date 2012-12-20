@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title></title>
-<script data-main="js/app.js" src="js/require.js"></script>
+<script data-main="js/index.js" src="js/require.js"></script>
 </head>
 <body>
 <canvas id="springydemo" width="640" height="480" />

@@ -1,13 +1,14 @@
 requirejs.config({
-    //By default load any module IDs from js/lib
-    baseUrl: 'js/lib',
+
+	baseUrl: 'js/lib',
     paths: {
-        app: '../app',
+        index: '../index',
         jquery: 'jquery-1.8.3.min',
         springy: 'springy',
         springyui: 'springyui',
         backbone:'backbone-min',
-        underscore:'underscore-min'
+        underscore:'underscore-min',
+        bootstrap: 'bootstrap/js/bootstrap.min'
     },
     shim: {
     	'underscore': {
@@ -16,13 +17,12 @@ requirejs.config({
     	'backbone': {
             deps: ['underscore', 'jquery'],
             exports: 'Backbone'
-        }
+        },
+        'bootstrap':{deps: ['jquery']}
     }
 });
 
-// Start the main app logic.
-requirejs(['app/demo'],function   (demo) {
 
-//	alert(springy);
-//	alert(jQuery.fn.springy);
+requirejs(['jquery','bootstrap'], function($, _bootstrap){
+	return {};
 });
