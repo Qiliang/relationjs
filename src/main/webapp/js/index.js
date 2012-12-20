@@ -23,6 +23,6 @@ requirejs.config({
 });
 
 
-requirejs(['jquery','bootstrap'], function($, _bootstrap){
+requirejs(['jquery','bootstrap','index/demo'], function($, _bootstrap){
 	return {};
 });
